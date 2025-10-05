@@ -1,0 +1,110 @@
+/* --- Styles de Base et Typographie --- */
+
+body {
+    /* Police élégante et moderne */
+    font-family: 'Georgia', serif; 
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    /* Fond couleur crème très doux */
+    background-color: #f7f3e8; 
+    color: #4a4a4a; /* Texte gris foncé pour une bonne lisibilité */
+    text-align: center;
+}
+
+/* --- En-tête (Header) --- */
+
+header {
+    /* Couleur vert forêt/sauge, très tendance et naturelle */
+    background-color: #4d7c67; 
+    color: white;
+    padding: 35px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Ombre plus présente */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    letter-spacing: 3px; /* Écartement pour le côté éditorial/pro */
+    font-weight: 400;
+}
+
+/* --- Section des Projets (Cartes) --- */
+
+#projetsperso {
+    padding: 50px 20px;
+    max-width: 950px; 
+    margin: 30px auto; 
+}
+
+/* Conteneur Flexbox */
+#projetsperso ul {
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    gap: 30px; /* Plus d'espace entre les éléments */
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+/* Style de chaque carte de projet (le <li>) */
+#projetsperso li {
+    background-color: white; 
+    border-left: 5px solid #d99f4d; /* Une ligne ocre/terreuse sur le côté comme accent */
+    border-radius: 4px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 30px;
+    width: 270px; 
+    text-align: left; /* Aligne le texte à gauche pour un look plus "document" */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol */
+#projetsperso li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+#projetsperso li h1 {
+    font-size: 1.5em;
+    color: #4d7c67; /* Le même vert que l'en-tête */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+/* --- Styles des Liens (Boutons) --- */
+
+#projetsperso a {
+    display: inline-block; 
+    /* Couleur terreuse/ocre pour le lien (contraste avec le vert) */
+    background-color: #d99f4d; 
+    color: white;
+    text-decoration: none; 
+    padding: 8px 18px;
+    border-radius: 20px; /* Coins très arrondis (pill shape) */
+    margin-top: 15px;
+    font-weight: 600; 
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease;
+}
+
+/* Effet au survol du lien */
+#projetsperso a:hover {
+    background-color: #c48a37; /* Ocre plus foncé */
+}
+
+/* --- Adaptabilité (Responsive) --- */
+
+@media (max-width: 768px) {
+    #projetsperso ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projetsperso li {
+        width: 85%;
+        max-width: 350px;
+    }
+}

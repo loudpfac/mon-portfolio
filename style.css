@@ -1,0 +1,87 @@
+/* STYLE GLOBAL */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* SECTIONS */
+section {
+    padding: 20px;
+}
+
+.projet {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    background-color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Conteneur superposé en haut à droite */
+#top-right-image {
+    position: sticky;      /* reste toujours visible en haut à droite */
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    height: 150px;
+    z-index: 1000;
+}
+
+#top-right-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 2s ease;
+}
+
+/* Image 2 invisible au départ et animée progressivement */
+#photo2 {
+    opacity: 0;
+    animation: fadeInOut 7s forwards; /* durée totale 7s : 5s pour le fondu + 2s affichée */
+    animation-delay: 2s; /* commence après 2 secondes */
+}
+
+@keyframes fadeInOut {
+    0%   { opacity: 0; }
+    50%  { opacity: 0.1; }     /* atteint 0.5 à mi-chemin */
+    70%  { opacity: 0,3; } /* fondu progressif jusqu'à 70% de la durée */
+    100% { opacity: 0; } /* disparaît à la fin */
+}
+
+
