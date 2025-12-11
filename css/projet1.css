@@ -75,4 +75,6 @@ img {
 
 footer {
     text-align: center;
-    padding
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+}
