@@ -1,0 +1,8 @@
+:root {
+    --main-color: #27ae60; 
+    --text-color: white; 
+    --bg-gradient: linear-gradient(135deg, #27ae60, #2ecc71); 
+    --font-main: 'Poppins', sans-serif; 
+    --shadow: none;
+}
+
