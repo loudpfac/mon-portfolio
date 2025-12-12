@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: var(--font-main);
     background: linear-gradient(135deg, #9b59b6, #e74c3c);
     color: white;
     line-height: 1.6;
@@ -89,6 +89,7 @@ section {
         width: 100%; 
     }
 }
+
 
 
 
