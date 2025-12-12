@@ -7,6 +7,7 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: linear-gradient(135deg, #0f5132, #000000);
+    filter: saturate(1.00001);
     color: white;
     line-height: 1.8;
 }
@@ -77,4 +78,5 @@ footer {
     text-align: center;
     padding: 40px;
     background: rgba(0, 0, 0, 0.5);
+
 }
