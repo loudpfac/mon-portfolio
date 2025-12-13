@@ -67,6 +67,10 @@ h2 {
     color: #4a90e2;
 }
 
+#projets {
+    text-align: center;
+}
+
 #projets h3 {
     margin: 0 auto 30px auto;
     width: fit-content;
@@ -112,4 +116,5 @@ footer {
         margin: 20px;
     }
 }
+
 
