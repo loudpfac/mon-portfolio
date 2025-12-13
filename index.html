@@ -12,9 +12,20 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/accueil.css">
     
+    <!-- Preconnect pour accélérer la connexion à Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Preload le CSS des fonts (priorité haute) + display=swap pour éviter texte invisible -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+
+<!-- Chargement normal (avec onload pour l'appliquer après chargement) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" media="print" onload="this.media='all'">
+
+<!-- Fallback si JS désactivé -->
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    </noscript>
    
     
 </head>
