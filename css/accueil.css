@@ -1,3 +1,22 @@
+/* Poppins Regular (400) */
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;  /* important : montre le texte tout de suite avec fallback */
+}
+
+/* Poppins Bold (700) */
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -116,6 +135,7 @@ footer {
         margin: 20px;
     }
 }
+
 
 
 
