@@ -91,7 +91,16 @@ footer {
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
+    #projets {
+        text-align: center !important; 
+    }
+    .projet-btn {
+        font-size: 1.2rem;
+        padding: 12px 25px;
+    }
+    
+}
     
     header {
         flex-direction: column; 
@@ -119,6 +128,7 @@ footer {
         padding: 20px;
         margin: 20px 10px; 
 }
+
 
 
 
