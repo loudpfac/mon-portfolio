@@ -67,6 +67,11 @@ h2 {
     color: #4a90e2;
 }
 
+#projets h3 {
+    margin: 0 auto 30px auto;
+    width: fit-content;
+}
+
 .projet-btn {
     display: block;
     width: fit-content;
@@ -107,3 +112,4 @@ footer {
         margin: 20px;
     }
 }
+
