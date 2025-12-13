@@ -1,16 +1,15 @@
-/* Poppins Regular (400) */
+
 @font-face {
     font-family: 'Poppins';
-    src: url(./polices/poppins-regular.woff2') format('woff2');
+    src: url('../polices/poppins-v20-latin-regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
-    font-display: swap;  /* important : montre le texte tout de suite avec fallback */
+    font-display: swap;
 }
 
-/* Poppins Bold (700) */
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/poppins-bold.woff2') format('woff2');
+    src: url('../polices/poppins-v20-latin-700.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -135,6 +134,7 @@ footer {
         margin: 20px;
     }
 }
+
 
 
 
