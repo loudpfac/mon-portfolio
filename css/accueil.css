@@ -68,8 +68,9 @@ h2 {
 }
 
 .projet-btn {
-    display: inline-block;
-    margin-top: 30px;
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0 auto;  
     padding: 15px 40px;
     background: #4a90e2;
     color: white;
@@ -105,3 +106,4 @@ footer {
 #projets {
     text-align: center;
 }
+
