@@ -60,11 +60,8 @@ section {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 #projets {
-    display: block; 
-    margin-left: auto !important;
-    margin-right: auto !important;
-    
     text-align: center !important; 
+    margin: 60px auto !important;
 }
 
 h2 {
@@ -135,6 +132,7 @@ footer {
         padding: 20px;
         margin: 20px 10px; 
 }
+
 
 
 
