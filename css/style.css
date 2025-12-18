@@ -1,147 +1,69 @@
-/* css/main.css */
-@import url('variables.css');
+/* css/style.css */
+/* Règles communes à plusieurs pages */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-  font-family: var(--font-main);
-  background: var(--bg-body);
-  color: var(--text);
-  line-height: 1.6;
-  min-height: 100vh;
-}
-
-header {
-  background: var(--bg-header);
-  padding: 3rem;
-  text-align: center;
-  box-shadow: var(--shadow-header);
-}
-
-h1 {
-  font-size: 3.5rem;
-  margin-bottom: 0.5rem;
-  color: var(--primary, inherit);
-}
-
-h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  text-align: center;
-  color: var(--primary, inherit);
-}
-
-nav ul {
-  list-style: none;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  margin: 10px 20px;
-}
-
-nav a {
-  color: var(--nav-color);
-  text-decoration: none;
-  font-size: 1.3rem;
-  padding: 10px 25px;
-  border: var(--nav-border) var(--nav-color);
-  border-radius: var(--border-radius-btn);
-  transition: var(--transition);
-}
-
-nav a:hover {
-  background: var(--nav-hover-bg);
-  color: var(--nav-hover-text);
-}
-
-section {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 40px;
-  background: var(--bg-section, transparent);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-section);
-  text-align: center;
-}
-
-/* Cartes projets (pour projets.html) */
-.projet-card {
-  background: var(--bg-card, transparent);
-  padding: 30px;
-  margin: 30px 0;
-  border-radius: 15px;
-  text-align: center;
-  transition: all 0.4s ease-in-out;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  max-width: 600px;
-  width: 100%;
-}
-
-.projet-card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
-
+/* Styles pour les images dans les cartes projets ou sections détaillées */
 .projet-card img {
-  width: 300px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-  margin: 15px 0;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
 }
 
-/* Bouton pulse (accueil) */
+section img {
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+.projet-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Le bouton avec animation pulse (utilisé sur l'accueil) */
+@keyframes pulse-btn {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(74, 144, 226, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(74, 144, 226, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(74, 144, 226, 0); }
+}
+
 .projet-btn {
-  display: block;
-  width: fit-content;
-  margin: 30px auto;
-  padding: 15px 40px;
-  background: var(--primary);
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-  border-radius: var(--border-radius-btn);
-  transition: var(--transition);
-  animation: pulse-btn 1.5s infinite;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    background: #4a90e2; /* sera surchargé par les pages si besoin */
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    transition: 0.3s;
+    animation: pulse-btn 1.5s infinite;
 }
 
 .projet-btn:hover {
-  background: var(--primary-dark, var(--primary));
-  transform: scale(1.05);
-  animation: none;
+    transform: scale(1.05);
+    animation: none;
 }
 
-@keyframes pulse-btn {
-  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(74, 144, 226, 0.7); }
-  70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(74, 144, 226, 0); }
-  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(74, 144, 226, 0); }
-}
-
-img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin: 20px auto;
-  display: block;
-}
-
-footer {
-  text-align: center;
-  padding: 40px;
-  background: var(--bg-footer, rgba(0, 0, 0, 0.5));
-  color: var(--footer-text, white);
-}
-
+/* Responsive pour les images */
 @media (max-width: 768px) {
-  h1 { font-size: 2.8rem; }
-  nav ul { flex-direction: column; }
-  section { margin: 20px; padding: 20px; }
-  .projet-card img { width: 100%; }
+    .projet-card img, section img {
+        width: 100%;
+        max-width: none;
+    }
 }
