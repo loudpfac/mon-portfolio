@@ -1,20 +1,8 @@
-/* css/variables.css */
 :root {
-  /* Police et trucs utilisés partout */
-  --font-main: 'Poppins', sans-serif;
-
-  /* Formes et effets réutilisables */
-  --border-radius: 15px;
-  --border-radius-btn: 50px;
-  --transition: all 0.3s ease;
-  --shadow-section: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --shadow-header: 0 4px 10px rgba(0, 0, 0, 0.1);
-
-  /* Tailles communes */
-  --padding-header: 3rem;
-  --padding-section: 40px;
-  --margin-section: 60px auto;
-  --font-size-h1: 3.5rem;
-  --font-size-h2: 2.5rem;
-  --font-size-nav: 1.3rem;
+    --main-color: #27ae60;
+    --text-color: white;
+    --bg-gradient: linear-gradient(135deg, #27ae60, #2ecc71);
+    --font-main: 'Poppins', sans-serif;
+    --shadow: none;
 }
+
