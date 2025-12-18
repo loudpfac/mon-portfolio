@@ -1,13 +1,13 @@
-/* css/style.css */
-/* Règles communes à plusieurs pages */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Styles pour les images dans les cartes projets ou sections détaillées */
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    line-height: 1.8;
+}
 .projet-card img {
     width: 100%;
     height: auto;
@@ -17,53 +17,46 @@
     margin: 20px auto;
     display: block;
 }
-
 section img {
     width: 300px;
     height: auto;
-    max-width: 100%;
+    max-width: 200px;
     object-fit: cover;
     border-radius: 10px;
     margin: 20px auto;
     display: block;
 }
-
 .projet-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
-
-/* Le bouton avec animation pulse (utilisé sur l'accueil) */
-@keyframes pulse-btn {
-    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(74, 144, 226, 0.7); }
-    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(74, 144, 226, 0); }
-    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(74, 144, 226, 0); }
-}
-
-.projet-btn {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 15px 40px;
-    background: #4a90e2; /* sera surchargé par les pages si besoin */
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    border-radius: 50px;
-    transition: 0.3s;
-    animation: pulse-btn 1.5s infinite;
-}
-
-.projet-btn:hover {
-    transform: scale(1.05);
-    animation: none;
-}
-
-/* Responsive pour les images */
 @media (max-width: 768px) {
     .projet-card img, section img {
         width: 100%;
         max-width: none;
     }
+}
+@keyframes pulse-btn {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(74, 144, 226, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(74, 144, 226, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(74, 144, 226, 0); }
+}
+.projet-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    background: #4a90e2;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    transition: 0.3s;
+   
+    animation: pulse-btn 1.5s infinite;
+}
+.projet-btn:hover {
+    background: #357abd;
+    transform: scale(1.05);
+    animation: none;
 }
