@@ -1,8 +1,79 @@
+/* css/variables.css */
+
+/* Variables communes à toutes les pages */
 :root {
-    --main-color: #27ae60; 
-    --text-color: white; 
-    --bg-gradient: linear-gradient(135deg, #27ae60, #2ecc71); 
-    --font-main: 'Poppins', sans-serif; 
-    --shadow: none;
+  --font-main: 'Poppins', sans-serif;
+  --border-radius: 15px;
+  --border-radius-btn: 50px;
+  --transition: 0.3s ease;
+  --shadow-section: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-header: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --nav-border: 2px solid;
 }
 
+/* Thème 1 : Accueil (pastel bleu-rose) */
+.theme-accueil {
+  --primary: #4a90e2;
+  --primary-dark: #357abd;
+  --text: #333;
+  --text-light: white;
+  --bg-body: linear-gradient(135deg, #a8edea, #fed6e3);
+  --bg-header: rgba(255, 255, 255, 0.9);
+  --bg-section: white;
+  --bg-footer: #4a90e2;
+  --footer-text: black;
+  --nav-color: var(--primary);
+  --nav-hover-bg: var(--primary);
+  --nav-hover-text: white;
+}
+
+/* Thème 2 : Liste des projets (violet-rouge) */
+.theme-projets {
+  --primary: #9b59b6;
+  --bg-body: linear-gradient(135deg, #9b59b6, #e74c3c);
+  --text: white;
+  --bg-header: rgba(0, 0, 0, 0.4);
+  --bg-card: rgba(255, 255, 255, 0.15);
+  --nav-color: white;
+  --nav-hover-bg: white;
+  --nav-hover-text: #9b59b6;
+}
+
+/* Thème 3 : Projet 1 (vert musique) */
+.theme-projet1 {
+  --primary: #27ae60;
+  --primary-dark: #229954;
+  --bg-body: linear-gradient(135deg, #27ae60, #2ecc71);
+  --text: white;
+  --bg-header: rgba(0, 0, 0, 0.4);
+  --bg-section: rgba(255, 255, 255, 0.1);
+  --nav-color: white;
+  --nav-hover-bg: white;
+  --nav-hover-text: var(--primary);
+}
+
+/* Thème 4 : Projet 2 (orange jeu de piste) */
+.theme-projet2 {
+  --primary: #e67e22;
+  --primary-dark: #d35400;
+  --bg-body: linear-gradient(135deg, #e67e22, #f39c12);
+  --text: white;
+  --bg-header: rgba(0, 0, 0, 0.4);
+  --bg-section: rgba(255, 255, 255, 0.1);
+  --nav-color: white;
+  --nav-hover-bg: white;
+  --nav-hover-text: var(--primary);
+}
+
+/* Thème 5 : Projet 3 (vert foncé maths) */
+.theme-projet3 {
+  --primary: #0f5132;
+  --primary-dark: #1b7a4b;
+  --bg-body: linear-gradient(135deg, #0f5132, #000000);
+  --text: white;
+  --bg-header: rgba(0, 0, 0, 0.4);
+  --bg-section: rgba(255, 255, 255, 0.1);
+  --nav-color: white;
+  --nav-hover-bg: white;
+  --nav-hover-text: var(--primary);
+}
